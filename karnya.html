@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Karnya — Where every plate finds a purpose</title>
+  <meta name="description" content="Karnya connects surplus food with people in need and routes leftover organics into compost, animal feed, biogas and recycled packaging." />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="karnya.css">
+  <script src="karnya.js"></script>
+  <title>Karnya — Where every plate finds a purpose</title>
+  <meta name="description" content="Karnya connects surplus food with people in need and routes leftover organics into compost, animal feed, biogas and recycled packaging." />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="Karnya home">
+
+      <img src="logo.jpg" alt="Karnya Logo" style="width:45px; height:45px; border-radius:8px;">
+     
+      <h1>Karnya</h1>
+    </a>
+    <nav class="menu" role="navigation" aria-label="Main menu">
+      <a href="#donate">Donate</a>
+      <a href="#recycle">Recycle</a>
+      <a href="#biogas">Biogas</a>
+      <a href="#compost">Compost</a>
+      <a href="#feed">Animal Feed</a>
+      <a href="#partners">Partners</a>
+       <a href="login.html" class="btn-cta">Login</a>
+        <a class="btn-cta" href="karnya_centre.html">Join Us</a>
+
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMobileMenu()">☰</button>
+  </div>
+</header>
+
+  <section class="hero" id="top" role="region" aria-label="Karnya hero">
+    <div class="hero-inner">
+      <div class="center">
+        <div class="pill">Team Annasetu · Karnya</div>
+        <h1 class="k-title">Where Every Plate finds a Purpose.</h1>
+        <p class="k-sub">Karnya rescues surplus food and routes organics into compost, animal feed, biogas & recycling — building a circular system that benefits people, planet and partners.</p>
+        <div class="hero-actions">
+          <button class="btn donate" onclick="scrollToId('donate')">Donate Food</button>
+          <button class="btn donate" onclick="scrollToId('joinForm')">Register Now</button>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <main class="container" role="main">
+   
+<section aria-labelledby="what-title">
+  <div class="section-header">
+    <h2 id="what-title">Our Services & Solutions</h2>
+   
+    <p>From immediate food redistribution to long-term waste & energy solutions.</p>
+  </div>
+  <div class="grid services">
+    <div class="card">
+      <h3><i class="fa-solid fa-hand-holding-heart"></i> Food Redistribution</h3>
+      <p>Instant donor → NGO matching, pickup coordination, quality checks & live tracking for donated meals.</p>
+      <a href="food_redistribution.html">See Details</a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-recycle"></i> Recycling (Packaging)</h3>
+      <p>Sort and route plastic, paper and glass to certified recyclers. Issue recycling certificates for audits.</p>
+      <a href="recycling.html">See Details</a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-bolt"></i> Biogas & Energy</h3>
+      <p>Organics sent to digesters to produce methane for electricity and clean cooking gas — energy offtake models available.</p>
+      <a href="biogas.html">See Details</a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-seedling"></i> Compost & Fertilizers</h3>
+      <p>High-quality compost and manure blends produced, packaged and sold as “Karnya Organic Mix” for farms & gardens.</p>
+      <a href="compost.html">See Details</a>
+    </div>
+  </div>
+</section>
+    
+    <section id="donate" aria-labelledby="donate-title">
+      <div class="section-header">
+        <h2 id="donate-title">Donate Food — Quick & Safe</h2>
+        <p>Create a donation in <strong>under 60 seconds</strong>. Nearby NGOs & volunteers get notified automatically.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-copy">
+          <h3>How it works</h3>
+          <ol class="muted-note">
+            <li>Make a listing (food type, portions, pickup time & photos).</li>
+            <li>Quality check (simple checklist) to keep donations safe.</li>
+            <li>Matched NGOs accept and track pickup; volunteers collect & deliver.</li>
+          </ol>
+          <div class="gap-8"></div>
+          <button class="btn donate" onclick="openModal()">Start a Donation</button>
+        </div>
+        <div class="feature-img" style="background-image:url('https://i.pinimg.com/736x/d3/f8/d1/d3f8d17ac000d32e8b458fa45ef10ba7.jpg')"></div>
+      </div>
+    </section>
+  
+    <section id="recycle" aria-labelledby="recycle-title">
+  <div class="section-header">
+    <h2 id="recycle-title">Recycling & Packaging</h2>
+    <p>Reduce landfill and create raw-material loops with audited partners.</p>
+  </div>
+  <div class="grid services">
+    <div class="card">
+      <h3><i class="fa-solid fa-bottle-water"></i> Plastic Sorting</h3>
+      <p>Onsite bins, QR tracking for pick-ups, and a sorted stream for recyclers.</p>
+      <a href="plastic_sorting.html">Learn More</a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-file"></i> Paper & Glass</h3>
+      <p>Reduce contamination and increase recycle yields with our training & pickup schedules.</p>
+      <a href="paper_glass.html">Learn More</a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i> Certificates</h3>
+      <p>Get verifiable recycling certificates for sustainability reports & CSR claims.</p>
+      <a href="certificates.html">Learn More</a>
+    </div>
+  </div>
+</section>
+   
+    <section id="biogas" aria-labelledby="biogas-title">
+      <div class="feature" style="align-items:stretch">
+        <div class="feature-img" style="background-image:url('https://i.pinimg.com/736x/a6/2d/5f/a62d5f10518004e4d4828fbfaf8b7ad7.jpg')"></div>
+        <div class="feature-copy">
+          <h2 id="biogas-title">Biogas & Energy Recovery</h2>
+          <p class="muted-note">We collaborate with anaerobic digesters and local plants — converting organics to energy and bio-fertilizer.</p>
+          <ul class="muted-note">
+            <li>Energy offtake & revenue models</li>
+            <li>Digestate repurposed for agriculture</li>
+            <li>Carbon credits & ESG documentation</li>
+          </ul>
+          <div class="gap-8"></div>
+          <button class="btn donate" onclick="openBiogasModal()">Explore Partnerships</button>
+          
+      </div>
+    </section>
+   
+     <section id="compost" aria-labelledby="compost-title">
+    <div class="grid cols-3">
+  <article class="card">
+    <h3>
+      <i class="fa-solid fa-leaf"></i> 
+      <a href="compost_bulk.html">Bulk Compost Orders</a>
+    </h3>
+    <p>Supply farms and nurseries with screened compost loads.</p>
+  </article>
+  <article class="card">
+    <h3>
+      <i class="fa-solid fa-seedling"></i> 
+      <a href="compost_packaged.html">Packaged Fertilizers</a>
+    </h3>
+    <p>Retail-ready Karnya Organic Mix for urban gardens and rooftop farms.</p>
+  </article>
+  <article class="card">
+    <h3>
+      <i class="fa-solid fa-tractor"></i> 
+      <a href="compost_soil.html">Soil Health Programs</a>
+    </h3>
+    <p>Collaborative pilot programs to test soil improvements & yields.</p>
+  </article>
+</div>
+    </section>
+    
+    <section id="feed" aria-labelledby="feed-title">
+      <div class="feature">
+        <div class="feature-copy">
+          <h2 id="feed-title">Animal Feed — Safe & Economical</h2>
+          <p class="muted-note">We convert safe bakery and vegetable surplus into dehydrated or blended feed under traceable batches and local regulation compliance.</p>
+          <ul class="muted-note">
+            <li>Batch testing & moisture control</li>
+            <li>Custom blends for dairy & poultry</li>
+            <li>Cost-effective supply chains for farmers</li>
+          </ul>
+          <button class="btn donate" onclick="openFeedModal()">Partner as Buyer</button>
+        </div>
+        <div class="feature-img" style="background-image:url('https://i.pinimg.com/1200x/6f/31/9b/6f319be7fcaf813b1ac1f363db185923.jpg')"></div>
+      </div>
+    </section>
+
+    <section id="impact" aria-labelledby="impact-title">
+      <div class="section-header">
+        <h2 id="impact-title">Live Impact (Demo)</h2>
+        <p>Simulated counters to show how the dashboard could look when connected to your backend.</p>
+      </div>
+      <div class="impact-wrap">
+        <div class="kpis" role="status" aria-live="polite">
+          <div class="kpi">
+            <div class="num" id="meals">0</div>
+            <div class="lbl">Meals Saved</div>
+          </div>
+          <div class="kpi">
+            <div class="num" id="waste">0</div>
+            <div class="lbl">Kg Waste Diverted</div>
+          </div>
+          <div class="kpi">
+            <div class="num" id="energy">0</div>
+            <div class="lbl">kWh from Biogas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section id="partners" aria-labelledby="partners-title">
+      <div class="section-header">
+        <h2 id="partners-title">Partnerships & Join Us</h2>
+        <p>Restaurants, caterers, NGOs, farms and industries — partner with Karnya for clear impact and mutual value.</p>
+      </div>
+      <div class="partner-grid">
+        <div class="card">
+          <h3>Why partner with Karnya?</h3>
+          <ul class="muted-note">
+            <li>Reduce disposal costs and landfill footprint</li>
+            <li>Access trained volunteers & logistics</li>
+            <li>Earn CSR/ESG credits & receive audit-ready reports</li>
+            <li>Turn waste into value: energy, feed, compost & recycled material</li>
+          </ul>
+          <div class="gap-8"></div>
+          <button class="btn donate" onclick="scrollToId('join')">Become a Partner</button>
+        </div>
+        <form id="joinForm" class="card" action="save_registration.php" method="POST">
+  <h3 style="margin-top:0">Partner / Volunteer Registration</h3>
+  <p class="muted-note">Fill the form and our team will reach out with next steps.</p>
+
+  <label for="org">Organization / Your name</label>
+  <input id="org" name="org" required type="text" placeholder="e.g., RedLeaf Cafe or Rahul Tiwari" />
+
+  <div class="form-row" style="margin-top:6px">
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" required type="email" placeholder="your@domain.com" />
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="text" placeholder="+91 98765 43210" />
+    </div>
+  </div>
+
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password" required placeholder="Choose a strong password" />
+
+  <label for="interest">I am interested in</label>
+  <select id="interest" name="interest">
+    <option>Food Donation</option>
+    <option>Recycling & Packaging</option>
+    <option>Biogas Partnership</option>
+    <option>Composting / Fertilizer</option>
+    <option>Animal Feed</option>
+    <option>Volunteer</option>
+    <option>Other</option>
+  </select>
+
+  <label for="msg">Message (short)</label>
+  <textarea id="msg" name="msg" placeholder="How would you like to collaborate?"></textarea>
+
+  <div class="gap-8"></div>
+  <button type="submit" class="btn donate">Submit Registration</button>
+  <div id="form-feedback" style="margin-top:10px;color:var(--muted)"></div>
+</form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer" role="contentinfo">
+    <div class="foot-inner">
+      <div>&copy; 2025 Karnya • Team Annasetu</div>
+      <div class="muted-note">For Further Queries pls contact us.</div>
+    </div>
+    <div>
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+  
+<div id="donationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Food Donation Form</h2>
+    
+    <form id="donationForm" action="save_donation.php" method="POST">
+
+      <label for="donorName">Donor Name</label>
+      <input type="text" id="donorName" name="donorName" required>
+     
+      <label for="donorContact">Contact Number</label>
+      <input type="tel" id="donorContact" name="donorContact" pattern="[0-9]{10}" maxlength="10" required placeholder="Enter 10-digit number">
+
+      <label for="donorType">Who are you?</label>
+      <select id="donorType" name="donorType" required>
+        <option value="">-- Select --</option>
+        <option value="House">House</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="NGO">NGO</option>
+        <option value="Other">Other</option>
+      </select>
+     
+      <label for="foodDetails">Food Details</label>
+      <textarea id="foodDetails" name="foodDetails" required placeholder="Describe the food quantity & type"></textarea>
+   
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" maxlength="6" required onblur="fetchAddress()">
+      
+      <label for="pickupAddress">Pickup Address</label>
+      <textarea id="pickupAddress" name="pickupAddress" required placeholder="Auto-filled from Pincode or GPS"></textarea>
+   
+      <button type="button" onclick="getLiveLocation()" class="btn donate"> Use My Live Location</button>
+      
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:15px;">
+        <button type="button" class="btn impact" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn donate">Submit Donation</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="biogasModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBiogasModal()">&times;</span>
+    <h2>Biogas Partnership Form</h2>
+  
+    <form id="biogasForm" action="save_biogas.php" method="POST">
+     
+      <label for="biogasOrg">Organization / Name</label>
+      <input type="text" id="biogasOrg" name="biogasOrg" required placeholder="Your company or personal name">
+ 
+      <label for="biogasEmail">Email</label>
+      <input type="email" id="biogasEmail" name="biogasEmail" required placeholder="your@email.com">
+     
+      <label for="biogasPhone">Phone</label>
+      <input type="tel" id="biogasPhone" name="biogasPhone" maxlength="10" pattern="[0-9]{10}" placeholder="10-digit number">
+   
+      <label for="biogasInterest">I am interested in</label>
+      <select id="biogasInterest" name="biogasInterest" required>
+        <option value="">-- Select --</option>
+        <option value="Energy Offtake">Energy Offtake & Revenue Models</option>
+        <option value="Digestate Use">Digestate for Agriculture</option>
+        <option value="Carbon Credits">Carbon Credits & ESG</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      <label for="biogasMsg">Message</label>
+      <textarea id="biogasMsg" name="biogasMsg" placeholder="Tell us about your interest..."></textarea>
+
+      <label for="biogasPincode">Pincode</label>
+      <input type="text" id="biogasPincode" name="biogasPincode" maxlength="6" required onblur="fetchAddress('biogasPincode','biogasAddress')">
+    
+      <label for="biogasAddress">Address</label>
+      <textarea id="biogasAddress" name="biogasAddress" required placeholder="Auto-filled from Pincode or GPS"></textarea>
+      
+      <button type="button" onclick="getLiveLocation('biogasAddress')" class="btn donate"> Use My Live Location</button>
+ 
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:15px;">
+        <button type="button" class="btn impact" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn donate" onclick="openBiogasModal()">Explore Partnership</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="feedModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFeedModal()">&times;</span>
+    <h2>Animal Feed Partnership Form</h2>
+   
+    <form id="feedForm" action="save_feed.php" method="POST">
+     
+      <label for="feedOrg">Organization / Name</label>
+      <input type="text" id="feedOrg" name="feedOrg" required placeholder="e.g., Dairy Farm Co." />
+     
+      <label for="feedEmail">Email</label>
+      <input type="email" id="feedEmail" name="feedEmail" required placeholder="your@domain.com" />
+      
+      <label for="feedType">Interested in</label>
+      <select id="feedType" name="feedType" required>
+        <option value="">-- Select --</option>
+        <option value="Bakery Surplus">Bakery Surplus Feed</option>
+        <option value="Vegetable Surplus">Vegetable Surplus Feed</option>
+        <option value="Custom Blend">Custom Blend</option>
+      </select>
+    
+      <label for="feedMsg">Message</label>
+      <textarea id="feedMsg" name="feedMsg" placeholder="Tell us your requirements"></textarea>
+   
+      <label for="feedPincode">Pincode</label>
+      <input type="text" id="feedPincode" name="feedPincode" maxlength="6" required 
+             onblur="fetchAddress('feedPincode','feedAddress')" />
+     
+      <label for="feedAddress">Address</label>
+      <textarea id="feedAddress" name="feedAddress" required placeholder="Auto-filled from Pincode or GPS"></textarea>
+      
+      <button type="button" onclick="getLiveLocation('feedAddress')" class="btn donate">
+         Use My Live Location
+      </button>
+      
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:15px;">
+        <button type="button" class="btn impact" onclick="closeFeedModal()">Cancel</button>
+        <button type="submit" class="btn donate">Submit Partnership</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
